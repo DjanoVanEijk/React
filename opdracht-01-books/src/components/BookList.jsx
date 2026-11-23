@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Book from './Book.jsx'
+import BookCounter from './BookCounter.jsx'
 import './BookList.css'
 
 function BookList() {
@@ -27,6 +28,7 @@ function BookList() {
   return (
     <section>
       <h1>Opdracht 1 - Books</h1>
+      <BookCounter aantal={books.length} />
       <ul className="book-list">
         {books.map((book) => (
           <Book book={book} key={book.id} />
