@@ -1,0 +1,24 @@
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.book-card {
+  max-width: 220px;
+}
+
+.book-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 300px;
+
+}
+
+.book-card h2 {
+  font-size: 1.25rem;
+}

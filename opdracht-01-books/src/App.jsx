@@ -5,10 +5,12 @@ import './App.css'
 
 function App() {
   return (
-    <Layout>
+    <>
       <Header />
-      <BookList />
-    </Layout>
+      <Layout>
+        <BookList />
+      </Layout>
+    </>
   )
 }
 
