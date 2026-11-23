@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Book from './Book.jsx'
 import './BookList.css'
 
 function BookList() {
@@ -28,11 +29,7 @@ function BookList() {
       <h1>Opdracht 1 - Books</h1>
       <ul className="book-list">
         {books.map((book) => (
-          <li className="book-card" key={book.id}>
-            <img src={book.image} alt={`Omslag van ${book.title}`} />
-            <h2>{book.title}</h2>
-            <p>{book.author}</p>
-          </li>
+          <Book book={book} key={book.id} />
         ))}
       </ul>
     </section>
